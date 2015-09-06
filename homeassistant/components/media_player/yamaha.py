@@ -116,8 +116,4 @@ class YamahaDevice(MediaPlayerDevice):
         self.client.on = False
         time.sleep(ON_OFF_SLEEP)  # give it some time
 
-    @property
-    def media_image_url(self):
-        """ Image url of current playing media. """
-        return self.client.small_image_url
 
